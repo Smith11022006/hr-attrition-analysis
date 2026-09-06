@@ -77,17 +77,19 @@ This project shows HOW MUCH it's costing the company.
 
 ---
 
- 📂 Project Structure
+ ## 📂 Project Structure
 
+```
 hr-attrition-analysis/
 ├── index.html
 ├── style.css
 ├── charts/
-│ ├── chart_dept_attrition.png
-│ ├── chart_age_attrition.png
-│ ├── chart_overtime_attrition.png
-│ └── chart_cost_dept.png
+│   ├── chart_dept_attrition.png
+│   ├── chart_age_attrition.png
+│   ├── chart_overtime_attrition.png
+│   └── chart_cost_dept.png
 └── README.md
+```
 
 ---
 
