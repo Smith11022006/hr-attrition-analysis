@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Attrition & Cost Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <div class="logo-icon">📊</div>
+            <div class="logo-text">HR Analytics</div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-label">OVERVIEW</div>
+            <a href="#kpi" class="nav-item active">🏠 Dashboard</a>
+            <a href="#charts" class="nav-item">📈 Visualizations</a>
+            <a href="#findings" class="nav-item">🔍 SQL Findings</a>
+            <a href="#insights" class="nav-item">💡 Insights</a>
+        </nav>
+
+        <div class="sidebar-meta">
+            <div class="meta-item">
+                <div class="meta-label">Dataset</div>
+                <div class="meta-value">IBM HR Analytics</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Records</div>
+                <div class="meta-value">1,470 Employees</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Tools Used</div>
+                <div class="meta-value">Python · SQL · HTML</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Project Type</div>
+                <div class="meta-value">Cost of Attrition</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <div>
+                <div class="topbar-title">Employee Attrition Dashboard</div>
+                <div class="topbar-sub">IBM HR Dataset · 2016 · BCA Final Year Project</div>
+            </div>
+            <div class="topbar-badge">Data Analytics Project</div>
+        </div>
+
+        <!-- KPI CARDS -->
+        <section id="kpi" class="kpi-grid">
+            <div class="kpi-card red">
+                <div class="kpi-icon">📉</div>
+                <div class="kpi-number">16.1%</div>
+                <div class="kpi-label">Attrition Rate</div>
+                <div class="kpi-sub">237 out of 1,470 left</div>
+            </div>
+            <div class="kpi-card orange">
+                <div class="kpi-icon">💰</div>
+                <div class="kpi-number">$57.3M</div>
+                <div class="kpi-label">Total Cost of Attrition</div>
+                <div class="kpi-sub">Replacement cost estimate</div>
+            </div>
+            <div class="kpi-card blue">
+                <div class="kpi-icon">👤</div>
+                <div class="kpi-number">$28,723</div>
+                <div class="kpi-label">Avg Cost per Employee</div>
+                <div class="kpi-sub">50% of annual salary</div>
+            </div>
+            <div class="kpi-card green">
+                <div class="kpi-icon">🏢</div>
+                <div class="kpi-number">Sales</div>
+                <div class="kpi-label">Highest Risk Dept</div>
+                <div class="kpi-sub">20.6% attrition rate</div>
+            </div>
+        </section>
+
+        <!-- CHARTS -->
+        <section id="charts">
+            <div class="section-header">
+                <div class="section-title">Key Visualizations</div>
+                <div class="section-sub">Python · Matplotlib Analysis</div>
+            </div>
+            <div class="chart-grid">
+                <div class="chart-card">
+                    <div class="chart-label">Attrition Rate by Department</div>
+                    <img src="charts/chart_dept_attrition.png" alt="Department">
+                </div>
+                <div class="chart-card">
+                    <div class="chart-label">Attrition Rate by Age Group</div>
+                    <img src="charts/chart_age_attrition.png" alt="Age Group">
+                </div>
+                <div class="chart-card">
+                    <div class="chart-label">Overtime vs Attrition</div>
+                    <img src="charts/chart_overtime_attrition.png" alt="Overtime">
+                </div>
+                <div class="chart-card">
+                    <div class="chart-label">Cost of Attrition by Department</div>
+                    <img src="charts/chart_cost_dept.png" alt="Cost">
+                </div>
+            </div>
+        </section>
+
+        <!-- SQL FINDINGS -->
+        <section id="findings">
+            <div class="section-header">
+                <div class="section-title">SQL Analysis Findings</div>
+                <div class="section-sub">MySQL Workbench · 5 Queries</div>
+            </div>
+            <div class="findings-grid">
+                <div class="finding-card">
+                    <div class="finding-icon">🏢</div>
+                    <div class="finding-content">
+                        <div class="finding-title">Department Risk</div>
+                        <div class="finding-text">Sales has highest attrition at <strong>20.6%</strong>, followed by HR at 19.0%</div>
+                    </div>
+                </div>
+                <div class="finding-card">
+                    <div class="finding-icon">⏰</div>
+                    <div class="finding-content">
+                        <div class="finding-title">Overtime Impact</div>
+                        <div class="finding-text">Overtime employees have <strong>3x higher</strong> attrition — 30.5% vs 10.4%</div>
+                    </div>
+                </div>
+                <div class="finding-card">
+                    <div class="finding-icon">💰</div>
+                    <div class="finding-content">
+                        <div class="finding-title">Salary Gap</div>
+                        <div class="finding-text">Employees who left earned <strong>$2,046 less</strong> per month than those who stayed</div>
+                    </div>
+                </div>
+                <div class="finding-card">
+                    <div class="finding-icon">👥</div>
+                    <div class="finding-content">
+                        <div class="finding-title">Age Group Risk</div>
+                        <div class="finding-text">Age 18-25 has <strong>34.7% attrition</strong> — highest among all age groups</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSIGHTS -->
+        <section id="insights">
+            <div class="section-header">
+                <div class="section-title">Business Recommendations</div>
+                <div class="section-sub">Action Plan based on Analysis</div>
+            </div>
+            <div class="insights-list">
+                <div class="insight-item">
+                    <span class="insight-num">01</span>
+                    <div class="insight-text">
+                        <strong>Reduce Overtime in Sales</strong> — Overtime employees are 3x more likely to leave. Hiring 2 extra staff in Sales could save $3.2M in attrition costs.
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <span class="insight-num">02</span>
+                    <div class="insight-text">
+                        <strong>Salary Review for Junior Roles</strong> — Employees earning below $5,000/month have highest attrition. A 15% salary hike could significantly reduce turnover.
+                    </div>
+                </div>
+                <div class="insight-item">
+                    <span class="insight-num">03</span>
+                    <div class="insight-text">
+                        <strong>Young Employee Retention Program</strong> — 18-25 age group has 34.7% attrition. Mentorship programs and career growth plans can help retain young talent.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
