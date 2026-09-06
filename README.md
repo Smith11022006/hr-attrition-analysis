@@ -78,6 +78,7 @@ This project shows HOW MUCH it's costing the company.
 ---
 
  📂 Project Structure
+
 hr-attrition-analysis/
 ├── index.html
 ├── style.css
