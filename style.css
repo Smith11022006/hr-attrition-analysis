@@ -223,3 +223,89 @@ body {
 
 .insight-text { font-size: 0.88rem; color: #555; line-height: 1.7; }
 .insight-text strong { color: #1a1d2e; font-size: 0.95rem; display: block; margin-bottom: 0.2rem; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .sidebar-logo {
+        width: 100%;
+        padding-bottom: 0.75rem;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    .nav-item {
+        padding: 5px 10px;
+        font-size: 0.78rem;
+    }
+
+    .sidebar-meta {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1rem;
+    }
+
+    .kpi-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .findings-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #charts, #findings, #insights {
+        padding: 0 1rem;
+    }
+
+    .insight-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .insight-num {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .kpi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
