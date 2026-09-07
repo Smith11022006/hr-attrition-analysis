@@ -86,8 +86,7 @@ hr-attrition-analysis/
 ├── chart_dept_attrition.png
 ├── chart_age_attrition.png
 ├── chart_overtime_attrition.png
-├── chart_cost_dept.png
-└── README.md
+└── chart_cost_dept.png
 ```
 
 ---
